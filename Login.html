@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Signup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="nav navtop">
+        <div class="logo">
+            <a href="index.html"><img src="Image/Logo1.png" alt="Logo" width="150px"></a>
+        </div>
+        <div class="nav_bar">
+            <a href="Aboutus.html" >About Us</a>
+            <a href="Services.html" >Services</a>
+            <a href="index.html" >Blogs</a>
+            <a href="contact.html" >Contact Us</a>
+            <a href="Login.html" >Login/Signup</a>
+        </div>
+    </nav>
+    <div class="main">
+    <div class="hero">
+        <div class="form_box">
+            <div class="btn_box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Sign Up</button>
+            </div>
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span id="chk">Remember Password</span>
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+            <form id="register" class="input-group">
+                <input type="text" class="input-field" placeholder="Full Name" required>
+                <input type="email" class="input-field" placeholder="Email Id" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span id="chk">I agree to the terms & conditions</span>
+                <button type="submit" class="submit-btn">Signup</button>
+            </form>
+        </div>
+    </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="logo2">
+            <a href="#"><img src="Image/Logo1.png" width="150"></a>
+        </div>
+        
+        <div class="pages">
+            <h3>Pages</h3>
+            <a href="Aboutus.html">About Us</a> |
+            <a href="Services.html">Services</a> |
+            <a href="#">Blogs</a> |
+            <a href="Login.html">Login</a> |
+            <a href="Login.html">Sign Up</a> 
+        </div>
+        <div class="doc">
+            <h3>Documents</h3>
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Terms Of Use</a> |
+            <a href="#">Refund Policy</a> 
+        </div>
+        <div class="social">
+            <h3>Follow Us</h3>
+            <a href="#"><i class="fab fa-facebook-square"></i></a> 
+            <a href="#"><i class="fab fa-linkedin"></i></a> 
+            <a href="#"><i class="fab fa-instagram"></i></a> 
+            <a href="#"><i class="fab fa-twitter-square"></i></a> 
+        </div>
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <a href="https:web.whatsapp.com/send?phone= +918279484725" target="_blank"><i class="fab fa-whatsapp"></i></a> 
+            <a href="mailto: ithimanshu@csjmu.ac.in" target="_blank"><i class="fas fa-envelope"></i></a> 
+            <a href="tel: +918171861132" target="_blank"><i class="fas fa-phone"></i></a>
+        </div>
+        <hr>
+        <p>Copyright &copy; 2021 Daaks. All Right Reserved</p>
+    </footer> 
+    <script src="https://kit.fontawesome.com/3d8215badb.js" crossorigin="anonymous"></script>
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+        function register(){
+            x.style.left = "-450px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+        function login(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+    </script>
+</body>
+</html>
